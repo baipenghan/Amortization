@@ -2,7 +2,7 @@ Definition of each class:
 
 1. AmortizationSchedule:  The Driver class that contains main() function
 2. AmortizationPlan: A class that stores input data tuple (amountBorrowed, apr, years)
-3. AmortizationCalculator:  An abstract class that defines how the monthly payment is calculated, and how the output is generated.
+3. AmortizationCalculator:  An abstract class that defines how the List of monthly payment is calculated, and how the raw output is generated.
 4. AmortizationMonthlyResult:  A class that stores the raw data of output
 5. AmortizationOutput: An abstract class that defines the style of the output.
 
