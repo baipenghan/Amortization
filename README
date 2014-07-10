@@ -7,8 +7,10 @@ Definition of each class:
 5. AmortizationOutput: An abstract class that defines the style of the output.
 
 How to run the program:
-1. cd into "exercise" directory, and run:  $ javac *.java
-2. cd .. up to the directory that contains the "exercise" folder, and run: $ java exercise.AmortizationSchedule
+1. cd into "exercise" directory, and run:  
+    $ javac *.java
+2. cd .. up to the directory that contains the "exercise" folder, and run: 
+    $ java exercise.AmortizationSchedule
 
 
 Additional thinking about the design:
