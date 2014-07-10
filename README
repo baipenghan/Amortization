@@ -14,11 +14,13 @@ How to run the program:
 
 
 Additional thinking about the design:
-1. If we have several formula to calculate monthly payment and we also have some logic that describes when to use every formula, e.g. If now the date is in Apr-Jue, we use formula 1, else if the date is in July-Sept, we use formula 2.
-  In this case, we can have a class named CalculatorFactory, which has a static function getCalculator(). We write our logic above in this function, and returns a AmortizationCalculator object.
-  Therefore, in main() function, we can do: 
-  AmortizationCalculator ac = CalculatorFactory.getCalculator();  
-  List<AmortizationMonthlyResult> listamr = ac.calculate(amortizationPlan);
-  ...
+If we have several formula to calculate monthly payment and we also have some logic that describes when to use every formula, e.g. If now the date is in Apr-Jue, we use formula 1, else if the date is in July-Sept, we use formula 2.
 
-  In this way, we don't need to manully change which calculator we want to use everytime.
+In this case, we can have a class named CalculatorFactory, which has a static function getCalculator(). We write our logic above in this function, and returns a AmortizationCalculator object.
+
+Therefore, in main() function, we can do: 
+    AmortizationCalculator ac = CalculatorFactory.getCalculator();  
+    List<AmortizationMonthlyResult> listamr = ac.calculate(amortizationPlan);
+    ...
+
+In this way, we don't need to manully change which calculator we want to use everytime.
